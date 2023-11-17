@@ -1,70 +1,38 @@
-﻿//#region Homework
-//internal class Program
+﻿// See https://aka.ms/new-console-template for more information
+#region Lab day task 1
+//Console.WriteLine("enter test result");
+//decimal scoretest = Convert.ToInt32(Console.ReadLine());
+//decimal first = scoretest * 40/100 ;
+//Console.WriteLine("enter exam result");
+//decimal scoreexam = Convert.ToInt32(Console.ReadLine());
+//decimal second = scoreexam * 60/100 ;
+//decimal result = (decimal)(first + second);
+//if ( result >= 65 && result <=100)
 //{
-//    private static void Main(string[] args)
-//    {
-//        int a = 45;
-//        int b = 125;
-//        byte c = 15;
-//        byte d = 17;
-//        byte result = (byte)(c + d);
-//        int result2 = (int)(b - a);
-//        int temp = a;
-//        a = b;
-//        b = temp;
-//        Console.WriteLine("first number" + " " + a);
-//        Console.WriteLine("second number" + " " + b);
-//        Console.WriteLine("third number " + c + " + " + "fourth number " + d + " = " + "result " + result);
-//        Console.WriteLine("first number " + a + " - " + "second number " + b + " = " + "result " + result2);
-//    }
+//    Console.WriteLine("Congratulations" + " you collected " + result + " poinst");
 //}
-//#endregion
-
-#region if else
-double n = 15;
-
-if (n % 2 == 0)
-{
-    Console.WriteLine("even number");
-}
-else if (n % 2 == 1)
-{
-    Console.WriteLine("odd number");
-}
-else
-{
-    Console.WriteLine("error");
-}
+//else if ( result >= 0  && result < 65)
+//{
+//    Console.WriteLine("Failed" + " you collected " + result + " poinst");
+//}
+//else
+//{
+//    Console.WriteLine("Enter correct number" + " you collected " + result + " poinst");
+//}
 #endregion
-
-#region if else
-double m = 70;
-if (m >= 65 && m <= 100)
+#region Lab day task 2
+Console.WriteLine("enter first number");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("enter second number");
+int m = Convert.ToInt32(Console.ReadLine());
+int sum = 0;
+Console.WriteLine("sum of odd numbers in n and m interval");
+for ( int i = n; i <= m; i++)
 {
-    Console.WriteLine("Passed");
+    if ( i % 2 == 1 )
+    {
+        sum += + i;
+    }
 }
-else if (m>= 0 && m < 65)
-{
-    Console.WriteLine("Failed");
-}
-else
-{
-    Console.WriteLine("error");
-}
-#endregion
-
-#region while
-int start = 1;
-while (start <= 10)
-{
-    Console.WriteLine(start);
-    start++;
-}
-#endregion
-
-#region for
-for (int i = 10; i >= 1; i--)
-{
-    Console.WriteLine(i);
-}
+Console.WriteLine(sum);
 #endregion
